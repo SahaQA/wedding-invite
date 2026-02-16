@@ -1,82 +1,136 @@
 <!doctype html>
-<html lang="en">
+<html lang="bn">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>A + B Wedding</title>
+  <title>শুভ বিবাহ — Arif & Bari</title>
   <link rel="stylesheet" href="styles.css" />
-  <meta name="description" content="Wedding invitation for A & B" />
+  <meta name="description" content="Bengali traditional (Hindu) wedding invitation" />
 </head>
+
 <body>
   <main class="container">
-    <header class="hero">
-      <p class="eyebrow">You're invited</p>
-      <h1>Arif & Bari are getting married</h1>
-      <p class="sub">Saturday, 20 April 2026 • 7:00 PM</p>
 
-      <div class="cta">
-        <a class="btn primary" href="#rsvp">RSVP</a>
-        <a class="btn" href="#location">View Location</a>
+    <!-- HERO -->
+    <header class="hero" id="top">
+      <div class="hero-cover">
+        <img src="images/cover.jpg" alt="Wedding cover photo" />
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="shubho">শুভ বিবাহ</p>
+
+          <div class="icon-row">
+            <!-- Optional icon; remove this <img> line if you don't have ganesha.png -->
+            <img class="icon" src="images/ganesha.png" alt="Ganesha icon" />
+          </div>
+
+          <h1>Arif <span class="amp">&</span> Bari</h1>
+          <p class="sub">২০ এপ্রিল ২০২৬ • শনিবার • সন্ধ্যা ৭টা</p>
+
+          <div class="cta">
+            <a class="btn primary" href="#rsvp">RSVP</a>
+            <a class="btn" href="#location">লোকেশন</a>
+            <a class="btn" href="#details">বিস্তারিত</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="invite-line">
+        <p>
+          আমাদের শুভ বিবাহ উপলক্ষে আপনার উপস্থিতি ও আশীর্বাদ কামনা করছি।
+        </p>
       </div>
     </header>
 
+    <!-- DETAILS -->
     <section class="card" id="details">
-      <h2>Event Details</h2>
+      <h2>অনুষ্ঠানের বিস্তারিত</h2>
       <div class="grid">
-        <div>
-          <h3>Date & Time</h3>
-          <p>Saturday, 20 April 2026<br/>7:00 PM (Bangladesh Time)</p>
+        <div class="info">
+          <h3>তারিখ ও সময়</h3>
+          <p>শনিবার, ২০ এপ্রিল ২০২৬<br/>সন্ধ্যা ৭টা</p>
         </div>
-        <div>
-          <h3>Venue</h3>
+
+        <div class="info">
+          <h3>ভেন্যু</h3>
           <p>Hotel Example Palace<br/>Banani, Dhaka</p>
         </div>
-        <div>
-          <h3>Dress Code</h3>
-          <p>Traditional / Formal</p>
+
+        <div class="info">
+          <h3>ড্রেস কোড</h3>
+          <p>Traditional / Festive</p>
         </div>
       </div>
     </section>
 
+    <!-- SCHEDULE -->
     <section class="card" id="schedule">
-      <h2>Schedule</h2>
+      <h2>অনুষ্ঠানসূচি</h2>
       <ul class="timeline">
-        <li><strong>7:00 PM</strong> — Welcome</li>
-        <li><strong>7:30 PM</strong> — Ceremony</li>
-        <li><strong>8:30 PM</strong> — Dinner</li>
-        <li><strong>9:30 PM</strong> — Celebration</li>
+        <li><strong>৭:০০</strong> — অতিথি আগমন</li>
+        <li><strong>৭:৩০</strong> — বিবাহ অনুষ্ঠান</li>
+        <li><strong>৮:৩০</strong> — নৈশভোজ</li>
+        <li><strong>৯:৩০</strong> — আড্ডা ও শুভেচ্ছা</li>
       </ul>
     </section>
 
+    <!-- GALLERY -->
+    <section class="card" id="gallery">
+      <h2>আমাদের কিছু মুহূর্ত</h2>
+      <div class="gallery">
+        <figure>
+          <img src="images/couple1.jpg" alt="Couple photo 1" />
+        </figure>
+        <figure>
+          <img src="images/couple2.jpg" alt="Couple photo 2" />
+        </figure>
+        <figure>
+          <img src="images/couple3.jpg" alt="Couple photo 3" />
+        </figure>
+      </div>
+      <p class="muted note">টিপ: ছবির নাম (case) ঠিকমতো মিলাতে হবে — যেমন cover.jpg ≠ Cover.jpg</p>
+    </section>
+
+    <!-- LOCATION -->
     <section class="card" id="location">
-      <h2>Location</h2>
-      <p>
-        <a class="link" target="_blank" rel="noreferrer"
+      <h2>লোকেশন</h2>
+      <p class="muted">গুগল ম্যাপে ভেন্যু দেখতে নিচের বাটনে ক্লিক করুন।</p>
+      <div class="cta">
+        <a class="btn primary" target="_blank" rel="noreferrer"
            href="https://www.google.com/maps?q=Banani,Dhaka">
-          Open in Google Maps
+          Google Maps খুলুন
         </a>
-      </p>
-      <!-- Optional: embed map iframe (works well on desktop) -->
-      <!--
+        <a class="btn" href="#top">উপরে যান</a>
+      </div>
+
+      <!-- Optional embedded map (uncomment if you want)
       <iframe class="map" loading="lazy"
         src="https://www.google.com/maps?q=Banani,Dhaka&output=embed"></iframe>
       -->
     </section>
 
+    <!-- RSVP -->
     <section class="card" id="rsvp">
       <h2>RSVP</h2>
-      <p>Please confirm by <strong>10 April 2026</strong>.</p>
-      <p>
+      <p>অনুগ্রহ করে <strong>১০ এপ্রিল ২০২৬</strong>-এর মধ্যে নিশ্চিত করুন।</p>
+
+      <div class="cta">
         <a class="btn primary" target="_blank" rel="noreferrer"
            href="https://forms.gle/YOUR_GOOGLE_FORM_LINK">
-          RSVP via Google Form
+          RSVP (Google Form)
         </a>
-      </p>
-      <p class="muted">Need help? Call/WhatsApp: +8801XXXXXXXXX</p>
+        <a class="btn" href="tel:+8801XXXXXXXXX">Call</a>
+        <a class="btn" target="_blank" rel="noreferrer"
+           href="https://wa.me/8801XXXXXXXXX">
+          WhatsApp
+        </a>
+      </div>
+
+      <p class="muted note">যদি RSVP লিঙ্ক না থাকে, পরে আপডেট করতে পারবেন—GitHub Pages auto update হয়।</p>
     </section>
 
     <footer class="footer">
-      <p>With love, Arif & Bari</p>
+      <p>আপনার আশীর্বাদ প্রত্যাশী — Arif & Bari</p>
     </footer>
   </main>
 </body>
